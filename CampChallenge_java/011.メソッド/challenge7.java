@@ -38,9 +38,7 @@ public class challenge7 extends HttpServlet {
         prof[2][0] = "9876";
         prof[2][1] = "佐藤";
         prof[2][2] = "1月1日";
-        prof[2][3] = "中野区";
-
-        prof[2][3] = null;
+        prof[2][3] = "null";
 
         return prof;
     }
@@ -70,12 +68,12 @@ public class challenge7 extends HttpServlet {
             String[][] main = main();
 
             for (String[] main1 : main) {
-                for (int i = 0; i < main1.length; i++) {
+                for (int i = 1; i < main1.length; i++) {
 
-                    if (i == 0||i == 3) {
+                    if (main1[i].equals("null")) {
                         continue;
                     }
-                    
+
                     out.println(main1[i]);
                 }
             }
