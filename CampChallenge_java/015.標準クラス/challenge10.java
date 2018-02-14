@@ -20,6 +20,6 @@ public class challenge10 {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmm");
         Date date = sdf.parse("201601010000");
 
-        System.out.print(date.getTime());
+        System.out.println(date.getTime()/1000);
     }
 }
